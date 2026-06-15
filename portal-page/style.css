@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+body {
+    background: #288CC8;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-family: Cinzel Decorative;
+}
+
+header {
+    grid-column: 2 / 5;
+    justify-self: center;
+    margin-bottom: 2em;
+}
+
+button {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+button:hover {
+    background: #AD4747;
+    border-radius: 100%;
+}
+
+button:active {
+    background: #8CEEB2;
+}
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+    justify-self: center;
+    align-self: center;
+}
+
+h1 {
+    color: #AD4747;
+    justify-self: center;
+    font-size: 300%;
+}
+
+nav {
+    justify-self: center;
+    font-size: 120%;
+}
+
+nav a {
+    color: #AD4747;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #F77F00;
+    text-decoration: underline;
+}
+
+p {
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
+    align-self: center;
+    justify-self: center;
+}
+
+ul {
+    grid-row: 3 / 4;
+    grid-column: 2 / 5;
+    justify-self: center;
+    margin: 0;
+    margin-top: -0.9em;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    padding-left: 1.5em;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.4em;
+    width: 16px;
+    height: 16px;
+    background-image: url(https://i.ibb.co/fzMMC2Ch/Scrib.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ul p {
+    text-decoration: underline;
+    font-weight: 900;
+    color: #8CEEB2;
+    margin-left: -1em;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #F77F00;
+    text-decoration: underline;
+}
+
+tr th {
+    color: #8CEEB2;
+    font-weight: 900;
+}
+
+tr {
+    background-color: #F77F00;
+}
+
+tr:nth-child(even) {
+    background-color: #AD4747;
+}
+
+table, th, td {
+    border: 2.25px solid #000000;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 4px;
+}
+
+table {
+    grid-row: 3 / 4;
+    grid-column: 2 / 5;
+    justify-self: center;
+    align-self: flex-start;
+    text-align: left;
+}
+
+form {
+    grid-row: 3 / 4;
+    grid-column: 2 / 5;
+    justify-self: start;
+    align-self: flex-end;
+}
+
+form p {
+    color: #8CEEB2;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+footer {
+    grid-row: 4 / 5;
+    grid-column: 2 / 5;
+    align-self: center;
+    justify-self: left;
+}
+
+footer p {
+    justify-self: left;
+}
+
+footer p a {
+    color: #8CEEB2;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #F77F00;
+    text-decoration: underline;
+}

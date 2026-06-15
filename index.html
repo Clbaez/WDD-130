@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Page</title>
+    <link rel="stylesheet" type="text/css" href="portal-page/style.css"/>
+    <link rel="icon" type="image/x-icon" href="portal-page/Scrib.png">
+</head>
+<body>
+    <header>
+        <h1>Caleb Bassett WDD130 Portal Page</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="white_water_rafting/index.html" target="_blank">White Water Rafting</a>
+            <a href="portal-page/ice.html">In Class Exercises</a>
+            <a href="portal-page/about.html">About Me</a>
+        </nav>
+    </header>
+    <!-- <audio id="velociraptor" src="velociraptor-bark.mp3" preload="auto"></audio> -->
+    <audio id="scrib" src="scrib.wav" preload="auto"></audio>
+    <button type="button">
+        <img src="Scrib.png" onclick="document.getElementById('scrib').currentTime=0; document.getElementById('scrib').play();">
+    </button>
+    <p>
+        Welcome to the portal page for my WDD130 class! 
+        Here you will find links to my White Water Rafting site, my In Class Exercises, 
+        and a brief About Me page!
+    </p>
+    <form>
+        <p>Do you like this webpage?</p>
+        <input type="radio" id="yes" name="like">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="like">
+        <label for="no">No</label>
+    </form>
+    <footer>
+        <p>You can contact me at my school email below</p>
+        <p><a href="mailto:bas26004@byui.edu">bas26004@byui.edu</a></p>
+    </footer>
+</body>
+</html>
