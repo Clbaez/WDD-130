@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 
+@font-face {
+        font-family: Drudge-Regular;
+        src: url(../fonts/Drudge-Regular.ttf);
+    }
+
 body {
     background: #288CC8;
     display: grid;
     grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    font-family: Cinzel Decorative;
+    /* font-family: Cinzel Decorative; */
+    font-family: 'Drudge-Regular';
 }
 
 header {
